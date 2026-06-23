@@ -8,4 +8,5 @@ def parse_employee_line(line: str) -> dict[str, str]:
 
 
 if __name__ == "__main__":
-    print(parse_employee_line("alice,developer,remote"))
+    parsed = parse_employee_line("employee_001,developer,remote")
+    print(f"Parsed employee record for role: {parsed['role']}")
